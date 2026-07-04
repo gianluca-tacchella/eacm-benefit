@@ -1,0 +1,5 @@
+@EndUserText.label: 'eACM Benefit Configuration'
+define service /EACM/BENF_SD {
+  expose /EACM/C_ZPR45;
+  expose /EACM/C_ZPR46;
+}

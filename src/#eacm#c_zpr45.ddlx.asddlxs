@@ -1,0 +1,26 @@
+@Metadata.layer: #CUSTOMER
+annotate entity /EACM/C_ZPR45 with
+{
+  @UI.facet: [{ id: 'General', type: #IDENTIFICATION_REFERENCE, label: 'Benefit type', position: 10 }]
+
+  @UI: { lineItem: [{ position: 10 }], identification: [{ position: 10 }], selectionField: [{ position: 10 }] }
+  Zcdben;
+
+  @UI: { lineItem: [{ position: 20 }], identification: [{ position: 20 }] }
+  Zdsben;
+
+  @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  ChangedBy;
+
+  @UI.hidden: true
+  ChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

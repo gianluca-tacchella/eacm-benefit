@@ -1,0 +1,50 @@
+@Metadata.layer: #CUSTOMER
+annotate entity /EACM/C_ZPR46 with
+{
+  @UI.facet: [{ id: 'General', type: #IDENTIFICATION_REFERENCE, label: 'Benefit accounts', position: 10 }]
+
+  @UI: { lineItem: [{ position: 10 }], identification: [{ position: 10 }], selectionField: [{ position: 10 }] }
+  @Consumption.valueHelpDefinition: [{
+    entity: {name: '/EACM/R_T001', element: 'Bukrs' }}]
+  Bukrs;
+
+  @UI: { lineItem: [{ position: 20 }], identification: [{ position: 20 }], selectionField: [{ position: 20 }] }
+  @Consumption.valueHelpDefinition: [{ entity: { name: '/EACM/I_Zpr02', element: 'Ztpag' } }]
+  Ztpag;
+
+  @UI: { lineItem: [{ position: 30 }], identification: [{ position: 30 }], selectionField: [{ position: 30 }] }
+  @Consumption: {
+    valueHelpDefinition: [ {
+      entity.element: 'Currency', 
+      entity.name: 'I_CurrencyStdVH', 
+      useForValidation: true
+    } ]
+  }
+  
+  Waers;
+
+  @UI: { lineItem: [{ position: 40 }], identification: [{ position: 40 }], selectionField: [{ position: 40 }] }
+  @Consumption.valueHelpDefinition: [{ entity: { name: '/EACM/I_Zpr45', element: 'Zcdben' } }]
+  Zcdben;
+
+  @UI: { lineItem: [{ position: 50 }], identification: [{ position: 50 }] }
+  Zcdebb;
+
+  @UI: { lineItem: [{ position: 60 }], identification: [{ position: 60 }] }
+  Zccosb;
+
+  @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  ChangedBy;
+
+  @UI.hidden: true
+  ChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+} 

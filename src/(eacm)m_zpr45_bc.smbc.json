@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "eACM -Benefit Type",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "/EACM/M_ZPR45_SB",
+    "serviceName": "/EACM/M_ZPR45_SD",
+    "serviceVersion": "0001",
+    "rootEntitySet": "ZPR45",
+    "name": "/EACM/M_ZPR45_BC",
+    "transportObject": "",
+    "configurationGroup": "",
+    "skipRootEntity": false
+  },
+  "appConfiguration": {
+    "listReport": {}
+  }
+}

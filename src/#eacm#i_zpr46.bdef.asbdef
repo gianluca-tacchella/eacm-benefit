@@ -1,0 +1,43 @@
+managed implementation in class /EACM/BP_I_ZPR46 unique;
+strict ( 2 );
+with draft;
+
+define behavior for /EACM/I_ZPR46 alias Zpr46
+persistent table /eacm/zpr46
+draft table /eacm/zpr46_d
+etag master LocalLastChangedAt
+lock master total etag ChangedAt
+authorization master ( global )
+{
+  field ( readonly )
+    CreatedBy,
+    CreatedAt,
+    ChangedBy,
+    ChangedAt,
+    LocalLastChangedAt;
+
+  mapping for /eacm/zpr46
+  {
+    Bukrs              = bukrs;
+    Ztpag              = ztpag;
+    Waers              = waers;
+    Zcdben             = zcdben;
+    Zcdebb             = zcdebb;
+    Zccosb             = zccosb;
+    CreatedBy          = created_by;
+    CreatedAt          = created_at;
+    ChangedBy          = changed_by;
+    ChangedAt          = changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+}

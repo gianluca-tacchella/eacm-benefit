@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "{{appDescription}}",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Type benefit"
+  },
+  "ui5AppDetails": {
+    "appId": "eacm.zpr45"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_38B0A96AA9A25B0BEEDD685E3F551CBA17742259_TM",
+    "semanticObject": "zEACM_ZPR45",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_38B0A96AA9A25B0BEEDD685E3F551CBA17742259_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Type benefit",
+        "subtitle": "ZPR45"
+      }
+    }
+  ]
+}

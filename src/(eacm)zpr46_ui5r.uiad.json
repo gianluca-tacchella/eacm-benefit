@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "{{appDescription}}",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Accounts for benefits"
+  },
+  "ui5AppDetails": {
+    "appId": "eacm.zpr46"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_80733A27DDB0B7AD9845E6B9CB773BC04A7836BD_TM",
+    "semanticObject": "zEACM_ZPR46",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_80733A27DDB0B7AD9845E6B9CB773BC04A7836BD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Accounts for benefits",
+        "subtitle": "ZPR46"
+      }
+    }
+  ]
+}
